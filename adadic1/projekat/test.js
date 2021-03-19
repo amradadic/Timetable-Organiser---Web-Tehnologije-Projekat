@@ -1,4 +1,4 @@
-const app = require("./zadatak2.js");
+const app = require("./zadatak1.js");
 const chai = require("chai");
 const chaiHttp = require("chai-http");
 const { expect } = chai;
