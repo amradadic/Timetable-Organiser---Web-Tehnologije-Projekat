@@ -1,0 +1,16 @@
+DELETE,/v1/all,null,{\"message\":\"Uspješno obrisan sadržaj datoteka!\"}
+POST,/v1/aktivnost,{\"naziv\":\"WT\",\"tip\":\"vježbe\",\"pocetak\":10,\"kraj\":12,\"dan\":\"Utorak\"\},\{\"message\":\"Uspješno dodana aktivnost!\"}
+GET,/v1/aktivnosti,null,[{\"naziv\":\"WT\",\"tip\":\"vježbe\",\"pocetak\":10,\"kraj\":12,\"dan\":\"Utorak\"}]
+GET,/v1/predmeti,null,[]
+POST,/v1/predmet,{\"naziv\":\"RMA\"\},\{\"message\":\"Uspješno dodan predmet!\"}
+GET,/v1/predmeti,null,[{\"naziv\":\"RMA\"}]
+POST,/v1/predmet,{\"naziv\":\"RMA\"},{\"message\":\"Naziv predmeta postoji!\"}
+GET,/v1/predmet/WT/aktivnost/,null,[\{\"naziv\":\"WT\",\"tip\":\"vježbe\",\"pocetak\":10,\"kraj\":12,\"dan\":\"Utorak\"\}]
+POST,/v1/aktivnost,\{\"naziv\":\"RMA\",\"tip\":\"vježbe\",\"pocetak\":11,\"kraj\":12,\"dan\":\"Utorak\"},\{\"message\":\"Aktivnost nije validna!\"}
+GET,/v1/predmet/RMA/aktivnost/,null,[]
+DELETE,/v1/aktivnost/WT,null,{\"message\":\"Uspješno obrisana aktivnost!\"}
+DELETE,/v1/aktivnost/WT,null,{\"message\":\"Greška - aktivnost nije obrisana!\"}
+GET,/v1/aktivnosti,null,[]\
+DELETE,/v1/predmet/RMA,null,{\"message\":\"Uspješno obrisan premdet!\"}
+DELETE,/v1/predmet/WT,null,{\"message\":\"Greška - predmet nije obrisan!\"}
+DELETE,/v1/all,null,{\"message\":\"Uspješno obrisan sadržaj datoteka!\"\}

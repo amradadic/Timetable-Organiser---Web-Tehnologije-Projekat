@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML lang="bs">
+<HEAD>
+<LINK rel="stylesheet"  href="planiranjeNastavnik.css" type="text/css">
+<LINK rel="stylesheet"  href="meni.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<TITLE>planiranjeNastavnik</TITLE>
+</HEAD>
+<BODY> 
+<div class="topnav">
+        <a  href="\..\spirala 2\spirala2rasporedi.html">Raspored</a>
+        <a  href="aktivnost.html">Aktivnost</a>
+        <a class="active" href="">Planiranje - nastavnik</a>
+        <a href="podaciStudent.html">Podaci o studentu</a>
+    </div>
+<div class="za-formu">
+    <form action = "planiranjeNastavnik.html" method = "post" class="forma">
+                <label class="poravnaj-lijevo" for="nazivPredmeta">Unesite naziv predmeta:</label> 
+                <input class="poravnaj-desno" type="text" name="nazivPredmeta" id="nazivPredmeta"/> 
+                <br>
+                <label class="poravnaj-lijevo" for="tip">Odaberite tip:</label> 
+                <select class="poravnaj-desno" name="tip" id="tip">
+                    <option value="predavanja">Predavanja</option>
+                    <option value="vjezbe">Vježbe</option>
+                </select>
+                <br>
+                <label class="poravnaj-lijevo" for="vrijemePocetka">Odaberite vrijeme početka:</label>
+                <input class="poravnaj-desno" type="time" name="vrijemePocetka" id="vrijemePocetka"/>
+                <br>
+                <label class="poravnaj-lijevo" for="vrijemeZavrsetka">Odaberite vrijeme kraja:</label>
+                <input class="poravnaj-desno" type="time" name="vrijemeZavrsetka" id="vrijemeZavrsetka"/>
+                <br>
+                <label class="poravnaj-lijevo" for="dan">Odaberite dan:</label> 
+                <select class="poravnaj-desno" name="dan" id="dan">
+                    <option value="ponedjeljak">Ponedjeljak</option>
+                    <option value="utorak">Utorak</option>
+                    <option value="srijeda">Srijeda</option>
+                    <option value="cetvrtak">Četvrtak</option>
+                    <option value="petak">Petak</option>
+                </select>
+                <br>
+                <input type="submit" value="Potvrdi" id="potvrdi"/>
+                <br>
+                <input type="reset" value="Poništi" id="ponisti"/>
+
+    </form>
+</div>
+</BODY>
+</HTML>
